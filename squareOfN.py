@@ -1,6 +1,7 @@
 # ) Square of N numbers
-n=int(input("Enter the Number:"))
-for i in range(1,n):
+l=[-2,1,3,-3,4,-4]
+#n=int(input("Enter the Number:"))
+for i in l:
     
     a=i*i
     print(a )
