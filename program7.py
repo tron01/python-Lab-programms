@@ -3,11 +3,20 @@
 # (b)  whether list sums to same value 
 # (c) whether any value occur in both 
 
-l1=[1,2,3,4,5,9]
-l2=[2,3,5,6,7]
-
+l1=[1,2,3,4,5,7]
+l2=[1,2,3,4,5,7]
+sum=0
+sum2=0
 if len(l1) == len(l2):
     print("same length")
 else:
     print("different length")
 
+for i in l1:
+    sum=sum+i
+for j in l2:
+    sum2=sum2+j
+if sum ==sum2:
+    print("list sums have same value")
+else:
+    print("list sums have not same value")    
