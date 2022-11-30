@@ -2,5 +2,5 @@
 names=["Ashil","Anand","Ajeesh","Aljo"]
 count=0
 for name in names:
-    count=count+names.count('a')
-    print("Occ of a in the list is:",count)
+    count=count+name.count('A')
+    print("Occ of a in the list", name,"is:",count)
