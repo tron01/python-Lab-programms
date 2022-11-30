@@ -1,5 +1,6 @@
+
 #Count the occurrences of each word in a line of text. 
-Text="this is a sample line text is a"
+Text=input("Enter the text:")
 words= {}
 for word in Text.split(' '):
     if word in words.keys():
