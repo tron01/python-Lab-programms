@@ -19,4 +19,4 @@ for j in l2:
 if sum ==sum2:
     print("list sums have same value")
 else:
-    print("list sums have not same value")    
+    print("list sums have not same value")
