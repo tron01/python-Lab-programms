@@ -21,5 +21,9 @@ if sum ==sum2:
 else:
     print("list sums have not same value")
 
-z = set(l1).intersection(l2)
-print("inter:",z)
+print("whether any value occur in both:")
+ 
+for x in l1:
+    for y in l2:
+        if x==y:
+            print("common element is ",y)
