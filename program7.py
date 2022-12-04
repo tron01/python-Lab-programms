@@ -3,8 +3,8 @@
 # (b)  whether list sums to same value 
 # (c) whether any value occur in both 
 
-l1=[1,2,3,4,5,7]
-l2=[1,2,3,4,5,7]
+l1=[1,2,3,4,5,2]
+l2=[1,2,3,4,8,7]
 sum=0
 sum2=0
 if len(l1) == len(l2):
@@ -20,3 +20,6 @@ if sum ==sum2:
     print("list sums have same value")
 else:
     print("list sums have not same value")
+
+z = set(l1).intersection(l2)
+print("inter:",z)
