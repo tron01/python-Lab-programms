@@ -22,8 +22,8 @@ else:
     print("list sums have not same value")
 
 print("whether any value occur in both:")
- 
+print("common element")
 for x in l1:
     for y in l2:
         if x==y:
-            print("common element is ",y)
+            print(y)
