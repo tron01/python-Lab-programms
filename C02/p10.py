@@ -1,0 +1,1 @@
+#Generate all factors of a number. 
