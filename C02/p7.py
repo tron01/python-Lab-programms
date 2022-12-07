@@ -13,3 +13,11 @@ def add_string(str1):
 
 s = input("Enter the string:")
 print("Result:",add_string(s))
+
+
+""" --------commented---- 
+
+string.endswith(string)
+
+
+"""
