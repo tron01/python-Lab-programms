@@ -1,4 +1,5 @@
-#Add ‘ing’ at the end of a given string. If it already ends with ‘ing’, then add ‘ly’
+#Add ‘ing’ at the end of a given string. If it already 
+# ends with ‘ing’, then add ‘ly’
 
 def add_string(str1):
   length = len(str1)
