@@ -1,14 +1,9 @@
 #Generate Fibonacci series of N terms
-
-n=int(input("Enter the number:"))
-
-def fib(n):
-    if n < 0:
-        print("Incorrect input")
-    elif n == 0:
-        return 0
-    elif n == 1 or n == 2:
-        return 1
-    else:
-        return fib(n-1) + fib(n-2)    
-print(fib(n))
+num = int(input("Enter the number:"))
+n1, n2 = 0, 1
+print("Fibonacci Series:", n1, n2, end=" ")
+for i in range(2, num):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    print(n3, end=" ")
