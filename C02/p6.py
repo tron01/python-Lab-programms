@@ -1,11 +1,12 @@
 #Count the number of characters (character frequency) in a string. 
 
 
-a="number"
+a=input("Enter a word:")
 print("Length of string:",len(a))
 
 
-"""
+"""   cmmt
+
 st=input("Enter a word:")
 
 c=0
