@@ -6,4 +6,4 @@ def c_fact(x):
         return ( x * c_fact(x-1) )
 
 n=int(input("Enter the number:"))
-print("Fact of ",n ,"is ",c_fact(n))           
+print("factorial of ",n ,"is ",c_fact(n))           
