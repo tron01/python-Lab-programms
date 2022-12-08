@@ -2,7 +2,7 @@
 
 
 a=input("Enter a word:")
-print("Length of string:",len(a))
+print("Length of ",a,":",len(a))
 
 
 """   cmmt
