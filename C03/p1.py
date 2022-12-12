@@ -26,6 +26,10 @@ import time
 #print("current day :",t.tm_mday)
 
 #print("current month :",t.tm_mon)
+#print("current year :",t.tm_year)
+#print("current hour :",t.tm_hour)
+#print("current minute :",t.tm_min)
+#print("current weekday :",t.tm_wday)
 
 #1.c
 import calendar
