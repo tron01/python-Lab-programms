@@ -64,7 +64,10 @@ Eg: N=4
 \* 
 
 10. Generate all factors of a number. 
-11. Write lambda functions to find area of square, rectangle and triangle. **Course Outcome 3(CO3):** 
+11. Write lambda functions to find area of square, rectangle and triangle. 
+
+**Course Outcome 3(CO3):** 
+
 1. Work with built-in packages ![](Aspose.Words.f857609c-2b05-45d2-8bb6-add55f678ed3.002.png)
 1. Create a package graphics with modules rectangle, circle and sub-package 3D-graphics with modules cuboid and sphere. Include methods to find area and perimeter of respective figures in each module. Write programs that finds area and perimeter of figures by different importing statements. (Include selective import of modules and import \* statements) 
 
