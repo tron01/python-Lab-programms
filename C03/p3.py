@@ -9,3 +9,12 @@ from Graphics.rectangle import *
 from Graphics.circle import *
 from Graphics.threeDGraphics.cuboid import *
 from Graphics.threeDGraphics.sphere import *
+
+l=int(input("Enter the length:"))
+b=int(input("Enter the breadth :"))
+print("Area of rectangle:",RectArea(l,b))
+print("Area of rectangle:",RectPerimeter(l,b))
+
+r=int(input("Enter the radius :"))
+print("Circle Area:",CircleArea(r))
+print("Circle Perimeter:",CirclePerimeter(r))
