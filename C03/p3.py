@@ -5,3 +5,7 @@ Write programs that finds area and perimeter of figures by different importing s
 (Include selective import of modules and import * statements)
 
 """
+from Graphics.rectangle import *
+from Graphics.circle import *
+from Graphics.threeDGraphics.cuboid import *
+from Graphics.threeDGraphics.sphere import *
