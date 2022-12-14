@@ -18,3 +18,15 @@ print("Area of rectangle:",RectPerimeter(l,b))
 r=int(input("Enter the radius :"))
 print("Circle Area:",CircleArea(r))
 print("Circle Perimeter:",CirclePerimeter(r))
+
+l=int(input("Enter the length:"))
+w=int(input("Enter the width :"))
+h=int(input("Enter the height:"))
+print("Cuboid Area:",CuboidArea(l,w,h))
+print("Cuboid Perimeter:",CuboidPerimeter(l,w,h))
+
+
+
+r=int(input("Enter the radius for :"))
+print("Sphere Area:",SphereArea(r))
+print("Sphere Perimeter:",SpherePerimeter(r))
