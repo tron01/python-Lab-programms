@@ -22,8 +22,8 @@ print("Circle Perimeter:",CirclePerimeter(r))
 l=int(input("Enter the length:"))
 w=int(input("Enter the width :"))
 h=int(input("Enter the height:"))
-print("Cuboid Area:",CuboidArea(l,w,h))
-print("Cuboid Perimeter:",CuboidPerimeter(l,w,h))
+CuboidArea(l,w,h)
+CuboidPerimeter(l,w,h)
 
 
 
