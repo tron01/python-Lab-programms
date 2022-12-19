@@ -1,4 +1,4 @@
-#multi inheri
+#multi level inheri
 class grandparent:
     
     def gp_show(self):
