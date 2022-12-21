@@ -5,9 +5,10 @@ try:
     b=int(input("Enter B:"))
     c=a/b
 
-except:
-    print("Can't divide with zero")
+except Exception as e:
+    #print("Can't divide with zero")
+    print(e)
 else:
-    print("No error")
+    print("No Exception")
 finally:
     print("the ' try except ' is finished ")
