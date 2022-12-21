@@ -7,3 +7,7 @@ try:
 
 except:
     print("Can't divide with zero")
+else:
+    print("No error")
+finally:
+    print("the ' try except ' is finished ")
