@@ -8,7 +8,7 @@ class BankAccount:
         self.Atype=AccType
         self.Balance=AccBalance
     def withdraw(self,Amount):
-        if( Amount>self.Balance ):
+        if( Amount>=self.Balance ):
             print("Low balance")
         else:
             self.Balance= self.Balance-Amount    
@@ -17,8 +17,7 @@ class BankAccount:
 
 accno=int(input("Enter your acc No:"))
 name=input("Enter your Name:")
-bala=int(input("Enter your Balance:"))
-obj =BankAccount(accno, name, "Savings",bala)
+obj =BankAccount(accno, name, "Savings")
 
 print("Account Number: ",obj.number)
 print("Account Name: ",obj.Name)
