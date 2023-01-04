@@ -11,13 +11,15 @@ class BankAccount:
         if( Amount>self.Balance ):
             print("Low balance")
         else:
-            return (self.Balance-Amount)
+            self.Balance= self.Balance-Amount    
     def deposit(self,Amount):
-        return (self.Balance+Amount)    
+        self.Balance= self.Balance+Amount    
 
+accno=int(input("Enter your acc No:"))
+name=input("Enter your Name:")
+bala=int(input("Enter your Balance:"))
+obj =BankAccount(accno, name, "Savings",bala)
 
-
-obj =BankAccount(110, "Ashil", "Savings",1000)
 print("Account Number: ",obj.number)
 print("Account Name: ",obj.Name)
 print("Account type: ",obj.Atype)
