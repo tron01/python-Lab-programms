@@ -6,3 +6,8 @@ print(s)
 print(fn.closed)  #file close status
 print(fn.mode) #file mode 
 print(fn.name) #file name
+
+fo =open("demo2.txt","w")
+
+fo.write("Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms")
+fo.close()
