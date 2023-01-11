@@ -40,7 +40,7 @@ fn1.close()
 s1 =fn1.readlines()
 print(s1)
 """
-#as list comp
+ #as list comp
 
 print([line.strip() for line in open('demo2.txt','r')])
 
