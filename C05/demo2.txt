@@ -1,1 +1,2 @@
-Python gdgg
+Python is dynamically-typed and garbage-collected 
+. It supports multiple programming paradigms
