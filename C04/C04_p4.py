@@ -14,11 +14,16 @@ class Time:
         second  =self.__s + time2.__s
         
         if minute >=60:
-            hour =hour+1
-            minute=minute-60
+            q=int(minute/60)
+            r=minute%60
+            hour =hour+q
+            minute=r
+        second= self.__s + time2.__s    
         if second >=60:
-            minute =minute +1 
-            second =second-60   
+            q1=int(second/60)
+            r1=second%60
+            minute =minute +q1
+            second =r1   
         #return second,minute,hour
         print("sum of Hours:",hour)
         print("sum of minute:",minute)
