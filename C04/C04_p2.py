@@ -14,17 +14,31 @@ class BankAccount:
             self.Balance= self.Balance-Amount    
     def deposit(self,Amount):
         self.Balance= self.Balance+Amount    
+    def display(self):
+        print("Account Number: ",self.number)
+        print("Account Name: ",self.Name)
+        print("Account type: ",self.Atype)
+        print("Account Balance: ",self.Balance)
 
 accno=int(input("Enter your acc No:"))
 name=input("Enter your Name:")
 obj =BankAccount(accno, name, "Savings")
-
-print("Account Number: ",obj.number)
-print("Account Name: ",obj.Name)
-print("Account type: ",obj.Atype)
-print("Account Balance: ",obj.Balance)
-dep=int(input("Enter the value to deposite: "))
-obj.deposit(dep)
-print("Account Balance: ",obj.Balance)
-wid=int(input("Enter the value to withdraw: "))
-obj.withdraw(wid)
+print("\n1.Account info\n2.Deposit\n3.Withdraw\n4.Exit")
+while(1):
+    
+    opt=int(input("Select your option:"))
+    if opt == 1:
+        obj.display()
+    elif opt == 2:
+        dep=int(input("Enter the value to deposite: "))
+        obj.deposit(dep)
+        print("Account Balance: ",obj.Balance)
+    elif opt == 3:
+        wid=int(input("Enter the value to withdraw: "))
+        obj.withdraw(wid)
+        print("Account Balance: ",obj.Balance)
+    elif opt == 4:
+        print("Exit")
+        break
+    else:
+        print("Invalid Option")
