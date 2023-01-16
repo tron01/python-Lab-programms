@@ -12,22 +12,19 @@ class Time:
         minute =self.__m + time2.__m
         
         second  =self.__s + time2.__s
-        
+        if hour >=24:
+            hour=hour%24
         if minute >=60:
-            q=int(minute/60)
-            r=minute%60
-            hour =hour+q
-            minute=r
-        second= self.__s + time2.__s    
+            hour =hour+int(minute/60)
+            minute=minute%60   
         if second >=60:
-            q1=int(second/60)
-            r1=second%60
-            minute =minute +q1
-            second =r1   
+            minute =minute + int(second/60)
+            second =second%60  
         #return second,minute,hour
         print("sum of Hours:",hour)
         print("sum of minute:",minute)
-        print("sum of second:",second)         
+        print("sum of second:",second)
+                 
 
 print("Time of first object")
 time1=Time()
