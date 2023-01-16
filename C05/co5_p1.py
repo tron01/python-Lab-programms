@@ -17,7 +17,7 @@ f2.close()
 
 """
 
-fn1 =open("demo2.txt","r")
+#fn1 =open("demo2.txt","r")
 # read multiple line
 """
 s1 =fn1.readline()
