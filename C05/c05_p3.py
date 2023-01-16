@@ -3,6 +3,8 @@ import pandas as pd
 
 
 csv_f = pd.read_csv("users.csv")
-print(csv_f)
+#print(csv_f)
 print()
-print(csv_f.head())
+#print(csv_f.head())
+id=csv_f[["name","batch"]]
+print(id)
