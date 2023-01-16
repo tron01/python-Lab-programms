@@ -4,3 +4,5 @@ import pandas as pd
 
 csv_f = pd.read_csv("users.csv")
 print(csv_f)
+print()
+print(csv_f.head())
