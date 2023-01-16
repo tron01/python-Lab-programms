@@ -19,7 +19,21 @@ print(csv_f)
 """
 import csv 
 
+
+"""
+#writer
+persons =[(11,'joy',4242424,'a'),(12,'jiby',4342255,'b')]
+csv_f1 = open("users.csv",'w',newline="")
+obj =csv.writer(csv_f1)
+for person in persons:
+    obj.writerow(person)
+csv_f1.close()    
+    
+  """  
 csv_f = open("users.csv")
 csv_reader =csv.reader(csv_f)
 for line in csv_f:
     print(line)
+    
+
+
