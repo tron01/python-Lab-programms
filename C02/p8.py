@@ -1,16 +1,15 @@
 #Accept a list of words and return length of longest word
 
-def longestLength(words):
-    maxLenList = []
-     
-    for word in words:
-        maxLenList.append((len(word), word))
-     
-    maxLenList.sort()
-     
-    print("The word with the longest length is:", maxLenList[-1][1],
-          " and length is ", len(maxLenList[-1][1]))
- 
-
-a = ["one", "two", "third", "four"]
-longestLength(a)
+a=[]
+n=int(input("enter the number"))
+for i in range(n):
+    b=input("enter the value")
+    a.append(b)
+print(a)
+m=len(a[0])
+temp=a[0]
+for i in a:
+    if (len(i)>m):
+        m=len(i)
+        temp=i
+print("longest word is",temp, "and length is ",m) 
