@@ -1,21 +1,24 @@
 #Create a class Rectangle with private attributes length and width. 
 # Overload ‘<’ operator to compare the area of 2 rectangles.
 
-class Rectangle:
+class rectangle:
     def __init__(self):
-        self.__length=int(input("Enter the length:"))
-        self.__width=int(input(("Enter the width:")))
-    def __lt__(self):
-        area1=self.__length*self.__width
-        return(area1)
+        self.__length=int(input("length:"))
+        self.__breadth=int(input("breadth:"))
+    def __lt__(self,ob2):
+        area1=self.__length * self.__breadth
+        area2=ob2.__length *ob2.__breadth
+        print("the area1:",area1)
+        print("the area2:",area2)
+        return (area1<area2)
+print("Rectangle-1")
+og1=rectangle()
+print("Rectangle-2")
+og2=rectangle()
 
+print(og1<og2)
 
-ob1=Rectangle()
-print()
-ob2=Rectangle()
-
-if ob1.__lt__() > ob2.__lt__():
-    print("Rectangle 1 Area is greater")
+if og1<og2:
+    print("rectangle 1 is smaller")
 else:
-    print("Rectangle 2 Area is greater")
-
+    print("rectangle 2 is smaller")
