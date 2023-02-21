@@ -4,36 +4,29 @@
 #Write a program that displays information about a Python book.
 #Use base class constructor invocation and method overriding.
 
-class Publisher():
-
-    def __init__(self,t,n):
-        self.__title=t
-        self.__author=n
+class publisher:
+    def __init__(self,n):
+        self.name=n
     def display(self):
-        print("Title =",self.__title)
-        print("author =",self.__author)    
-class Book(Publisher):
-    
-    def __init__(self,t,n,p,np):
-        super().__init__(self,t,n)
-        self.__price=p
-        self.__no_of_page=np
-        
+        print("Name of the book is",self.name)
+class book(publisher):
+    def __init__(self,n,t,a):
+        super().__init__(n)
+        self.title=t
+        self.author=a
     def display(self):
-        print("price =",self.__price)
-        print("no_of_page =",self.__no_of_page)
-class Python(Book):
-    def __init__(self,t,n,p,np):
-        self.__title=t
-        self.__author=n
-        self.__price=p
-        self.__no_of_page=np
+        print("Title of the book is",self.title)
+        print("Author of the book is",self.author)
+class python(book):
+    def __init__(self,n,t,a,p,pgs):
+        super().__init__(n,t,a)
+        self.price=p
+        self.pages=pgs
     def display(self):
-        print("Title =",self.__title)
-        print("author =",self.__author)
-        print("price =",self.__price)
-        print("no_of_page =",self.__no_of_page)   
-
-obj =Python("book1","nam1",1000,100)
-obj.display()
-        
+        print("Name of the book is:",self.name)
+        print("Title of the book is:",self.title)
+        print("Author of the book is:",self.author)
+        print("Price of the book is :",self.price)
+        print("No of pages:",self.pages)
+p1=python("python","Introduction to python","Jeeva Jose",450,300)
+p1.display()
